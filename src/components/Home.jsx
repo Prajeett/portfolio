@@ -11,8 +11,7 @@ const Home = () => {
     >
       <div className=" max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
-          <h2 className="text-2xl sm:text-4xl font-bold text-white min-w-max">
-            I am a Full Stack Developer
+          <h2 className="text-2xl sm:text-4xl font-bold text-white min-w-max">Full Stack Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-lg">
           Continually learning and staying up-to-date with the latest web development trends and technologies to deliver robust and efficient solutions. Dedicated to producing high-quality code that solves complex problems and drives business growth.
@@ -32,7 +31,7 @@ const Home = () => {
           <img
             src={heroImage}
             alt="profile"
-            className=" mx-auto rounded-full w-2/3 md:max-w-lg"
+            className=" mx-auto rounded-full w-2/3 md:max-w-lg "
           />
         </div>
       </div>
