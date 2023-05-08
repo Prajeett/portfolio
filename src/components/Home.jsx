@@ -15,10 +15,7 @@ const Home = () => {
             I am a Full Stack Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-lg">
-            Please feel free to look around Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Excepturi temporibus quod nisi
-            delectus quam blanditiis quia possimus! Corporis ad, quam officiis
-            iure, eos quaerat expedita, eius ipsa sint veniam eum!
+          Continually learning and staying up-to-date with the latest web development trends and technologies to deliver robust and efficient solutions. Dedicated to producing high-quality code that solves complex problems and drives business growth.
           </p>
 
           <div>
