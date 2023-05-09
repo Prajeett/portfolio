@@ -5,15 +5,15 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full md:h-screen bg-gradient-to-b from-gray-800 to-black text-white"
     >
       <div className=" p-4  max-w-screen-lg mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
+        <div className="pb-8 pt-10 md:pt-0">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             About
           </p>
         </div>
-        <p className="text-xl mt-20">
+        <p className="text-xl md:mt-20">
           Hello and welcome to my portfolio! My name is <span className="font-highlight">Prajeet</span>, and I am a
           passionate Full Stack developer. My journey into development started
           with a curiosity for how things work. As I delved deeper into the

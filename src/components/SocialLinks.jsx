@@ -4,6 +4,8 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 
 const SocialLinks = () => {
+
+  
   const links = [
     {
       id: 1,
@@ -13,7 +15,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://flowbite.com/docs/components/buttons/",
+      href: "https://www.linkedin.com/in/prajeet-basnet-0187311a6/",
       style: "rounded-tr-md",
     },
     {
@@ -23,7 +25,7 @@ const SocialLinks = () => {
           Github <FaGithub size={30} />
         </>
       ),
-      href: "https://flowbite.com/docs/components/buttons/",
+      href: "https://github.com/Prajeett",
     },
     {
       id: 3,
@@ -32,7 +34,7 @@ const SocialLinks = () => {
           Mail <HiOutlineMail size={30} />
         </>
       ),
-      href: "mailto:bla@gmail.com",
+      href: "mailto:basnet.prajeet@gmail.com",
     },
     {
       id: 4,
@@ -48,6 +50,7 @@ const SocialLinks = () => {
   ];
 
   return (
+<>
     <div className=" hidden md:flex flex-col top-[35%] left-0 fixed">
       <ul>
         {links.map(({ id, child, style, href, download }) => (
@@ -72,6 +75,22 @@ const SocialLinks = () => {
         ))}
       </ul>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </>
   );
 };
 
