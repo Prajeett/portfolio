@@ -7,12 +7,14 @@ import todo from "../assets/portfolio/todo.png";
 
 const Portfolio = () => {
   const portfolios = [
+
     {
       id: 1,
-      src: Ecommerce,
-      Demo: "https://prajeet-ecommerce.netlify.app/",
-      Code: "https://github.com/Prajeett/React-Ecommerce",
+      src: incomeTax,
+      Demo: "https://prajeet-ato.netlify.app/",
+      Code: "https://github.com/Prajeett/ato_tax_calculation",
     },
+  
     {
       id: 2,
       src: hotel,
@@ -33,9 +35,9 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      src: incomeTax,
-      Demo: "https://prajeet-ato.netlify.app/",
-      Code: "https://github.com/Prajeett/ato_tax_calculation",
+      src: Ecommerce,
+      Demo: "https://prajeet-ecommerce.netlify.app/",
+      Code: "https://github.com/Prajeett/React-Ecommerce",
     },
   ];
   return (
