@@ -1,78 +1,159 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { BsFillPersonLinesFill } from "react-icons/bs";
+import { HiOutlineMail } from "react-icons/hi";
 
 const Contact = () => {
+  const links = [
+    {
+      id: 1,
+      child: (
+        <>
+          {" "}
+          <FaLinkedin size={30} />
+        </>
+      ),
+      href: "https://www.linkedin.com/in/prajeet-basnet-0187311a6/",
+      style: "rounded-tr-md",
+    },
+    {
+      id: 2,
+      child: (
+        <>
+          <FaGithub size={30} />
+        </>
+      ),
+      href: "https://github.com/Prajeett",
+    },
+    {
+      id: 3,
+      child: (
+        <>
+          <HiOutlineMail size={30} />
+        </>
+      ),
+      href: "mailto:basnet.prajeet@gmail.com",
+    },
+    {
+      id: 4,
+      child: (
+        <>
+          <BsFillPersonLinesFill size={30} />
+        </>
+      ),
+      href: "/PrajeetBasnetResume1.pdf",
+      style: "rounded-br-md",
+      download: true,
+    },
+  ];
 
-
-
-  const handleOnChange = (event)=>{
+  const handleOnChange = (event) => {
     event.preventDefault();
-    setText(event.target.value)
+    setText(event.target.value);
+  };
 
-  }
+  const handleUpClick = (event) => {
+    setText({
+      fullname: "",
+      emailAddress: "",
+      message: "",
+    });
+  };
 
-const handleUpClick = (event) => {
-  setText({
-    fullname : "",
+  const [Text, setText] = useState({
+    fullname: "",
     emailAddress: "",
     message: "",
-
-  })
-}
-
-const [Text, setText] = useState({
-    fullname : "",
-    emailAddress: "",
-    message: "",
-    
   });
 
-
-
   return (
-    <div
-      name="contact"
-      className="w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white pt-10 md:pt-10"
-    >
-      <div className="pb-8">
-        <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">Contact</p>
-          <p className="py-6">Submit the form below to get in touch with me 
-          <p className="text-sm italic text-slate-500"> Disclaimar: You will get redirected to getform.io after submitting the form!</p></p>
-        </div>
-        <div className="flex justify-center items-center px-4 md:px-0">
-          <form action="https://getform.io/f/2f5cae13-420b-49d1-8720-2259444058ec" method="POST" className="flex flex-col w-full md:w-1/2">
-            <input
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-              value = {Text.fullname} 
-              onChange = {handleOnChange}
-            
-            />
-            <input
-              type="Email"
-              name="name"
-              placeholder="Enter your email"
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-              value = {Text.emailAddress} 
-              onChange = {handleOnChange}
-            />
-            <textarea
-              name="message"
-              rows="10"
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none" placeholder="Enter your message"
-              value = {Text.message} 
-              onChange = {handleOnChange}
-            ></textarea>
+    <>
+      <div
+        name="contact"
+        className="w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white pt-10 md:pt-10"
+      >
+        <div className="pb-8">
+          <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
+            <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+              Contact
+            </p>
+            <p className="py-6">
+              Submit the form below to get in touch with me
+              <p className="text-sm italic text-slate-500">
+                {" "}
+                Disclaimar: You will get redirected to getform.io after
+                submitting the form!
+              </p>
+            </p>
+          </div>
+          <div className="flex justify-center items-center px-4 md:px-0">
+            <form
+              action="https://getform.io/f/2f5cae13-420b-49d1-8720-2259444058ec"
+              method="POST"
+              className="flex flex-col w-full md:w-1/2"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                value={Text.fullname}
+                onChange={handleOnChange}
+              />
+              <input
+                type="Email"
+                name="name"
+                placeholder="Enter your email"
+                className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                value={Text.emailAddress}
+                onChange={handleOnChange}
+              />
+              <textarea
+                name="message"
+                rows="10"
+                className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                placeholder="Enter your message"
+                value={Text.message}
+                onChange={handleOnChange}
+              ></textarea>
 
-            <button onClick={handleUpClick} className="text-white w-fit px-6 py-3 my-8 flex items-center rounded-md cursor-pointer bg-gradient-to-br from-purple-600 to-blue-500 mx-auto hover:scale-110 duration-300">
-              Let's talk
-            </button>
-          </form>
+              <button
+                onClick={handleUpClick}
+                className="text-white w-fit px-6 py-3 my-8 flex items-center rounded-md cursor-pointer bg-gradient-to-br from-purple-600 to-blue-500 mx-auto hover:scale-110 duration-300"
+              >
+                Let's talk
+              </button>
+            </form>
+          </div>
+          <div className=" md:hidden flex justify-around items-center w-full h-full">
+        <ul className="flex">
+          {links.map(({ id, child, style, href, download }) => (
+            <li
+              key={id}
+              className={style}
+            >
+              <a
+                href={href}
+                className=" text-white px-20 "
+                download={download}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <> {child}</>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
         </div>
       </div>
-    </div>
+
+
+
+
+
+      
+    </>
   );
 };
 

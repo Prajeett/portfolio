@@ -1,36 +1,41 @@
 import React from "react";
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
-import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
-import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import Ecommerce from "../assets/portfolio/Ecommerce.png";
+import hotel from "../assets/portfolio/hotel.png";
+import incomeTax from "../assets/portfolio/incomeTax.png";
+import movieSearch from "../assets/portfolio/movieSearch.png";
+import todo from "../assets/portfolio/todo.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: Ecommerce,
+      Demo: "https://prajeet-ecommerce.netlify.app/",
+      Code: "https://github.com/Prajeett/React-Ecommerce",
     },
     {
       id: 2,
-      src: reactParallax,
+      src: hotel,
+      Demo: "https://tajalehotels.netlify.app/",
+      Code: "https://github.com/Prajeett/hotel/",
     },
     {
       id: 3,
-      src: navbar,
+      src: todo,
+      Demo: "https://prajeet-todo.netlify.app/",
+      Code: "https://github.com/Prajeett/to-do-list",
     },
     {
       id: 4,
-      src: reactSmooth,
+      src: movieSearch,
+      Demo: "https://react-api-movie-search.netlify.app/",
+      Code: "https://github.com/Prajeett/search-movie-react",
     },
     {
       id: 5,
-      src: installNode,
-    },
-    {
-      id: 6,
-      src: reactWeather,
+      src: incomeTax,
+      Demo: "https://prajeet-ato.netlify.app/",
+      Code: "https://github.com/Prajeett/ato_tax_calculation",
     },
   ];
   return (
@@ -46,7 +51,7 @@ const Portfolio = () => {
           <p className="py-6">Check out my work here</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, Demo, Code }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -54,12 +59,21 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Demo
-                </button>
-                <button className="w1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  Code
-                </button>
+                <a href={Demo} target="_blank" rel="noreferrer">
+                  {" "}
+                  <button className="w1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                    Demo
+                  </button>
+                </a>
+
+
+                <a href={Code} target="_blank" rel="noreferrer">
+                  {" "}
+                  <button className="w1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                    Code
+                  </button>
+                </a>
+
               </div>
             </div>
           ))}
