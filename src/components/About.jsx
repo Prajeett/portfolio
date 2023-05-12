@@ -13,7 +13,7 @@ const About = () => {
             About
           </p>
         </div>
-        <p className="text-xl md:mt-20">
+        <p className="md:text-xl md:mt-20">
           Hello and welcome to my portfolio! My name is <span className="font-highlight">Prajeet</span>, and I am a
           passionate Full Stack developer. My journey into development started
           with a curiosity for how things work. As I delved deeper into the
@@ -22,7 +22,7 @@ const About = () => {
         </p>
 
         <br />
-        <p className="text-xl">
+        <p className="md:text-xl">
           {" "}
           I specialize in building responsive and user-friendly websites and
           applications. What sets me apart as a developer is my focus on the
