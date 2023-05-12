@@ -67,10 +67,10 @@ const Contact = () => {
   });
 
   return (
-    <>
+
       <div
         name="contact"
-        className="w-full h-screen bg-gradient-to-b from-black to-gray-800 text-white pt-10 md:pt-10"
+        className="w-full h-full bg-gradient-to-b from-black to-gray-800 text-white pt-10 md:pt-10"
       >
         <div className="pb-8">
           <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
@@ -125,35 +125,25 @@ const Contact = () => {
               </button>
             </form>
           </div>
-          <div className=" md:hidden flex justify-around items-center w-full h-full">
-        <ul className="flex">
-          {links.map(({ id, child, style, href, download }) => (
-            <li
-              key={id}
-              className={style}
-            >
-              <a
-                href={href}
-                className=" text-white px-20 "
-                download={download}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <> {child}</>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
+          <div className=" md:hidden flex  items-center h-full w-full ma">
+            <ul className="flex min-w-full justify-evenly items-end">
+              {links.map(({ id, child, style, href, download }) => (
+                <li key={id} className={"items-center" + {style}}>
+                  <a
+                    href={href}
+                    download={download}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <> {child}</>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
 
-
-
-
-
-      
-    </>
   );
 };
 
