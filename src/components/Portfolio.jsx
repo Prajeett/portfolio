@@ -7,14 +7,13 @@ import todo from "../assets/portfolio/todo.png";
 
 const Portfolio = () => {
   const portfolios = [
-
     {
       id: 1,
       src: incomeTax,
       Demo: "https://prajeet-ato.netlify.app/",
       Code: "https://github.com/Prajeett/ato_tax_calculation",
     },
-  
+
     {
       id: 2,
       src: hotel,
@@ -68,14 +67,12 @@ const Portfolio = () => {
                   </button>
                 </a>
 
-
                 <a href={Code} target="_blank" rel="noreferrer">
                   {" "}
                   <button className="w1/2 px-6 py-3 m-4 duration-200 hover:scale-105 bg-slate-900 rounded-full">
                     Code
                   </button>
                 </a>
-
               </div>
             </div>
           ))}

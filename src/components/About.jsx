@@ -1,7 +1,6 @@
 import React from "react";
 
 const About = () => {
-
   return (
     <div
       name="about"
@@ -14,11 +13,12 @@ const About = () => {
           </p>
         </div>
         <p className="md:text-xl md:mt-20">
-          Hello and welcome to my portfolio! My name is <span className="font-highlight">Prajeet</span>, and I am a
-          passionate Full Stack developer. My journey into development started
-          with a curiosity for how things work. As I delved deeper into the
-          world of coding, I discovered the power of creating beautiful,
-          intuitive interfaces that enhance user experiences.
+          Hello and welcome to my portfolio! My name is{" "}
+          <span className="font-highlight">Prajeet</span>, and I am a passionate
+          Full Stack developer. My journey into development started with a
+          curiosity for how things work. As I delved deeper into the world of
+          coding, I discovered the power of creating beautiful, intuitive
+          interfaces that enhance user experiences.
         </p>
 
         <br />

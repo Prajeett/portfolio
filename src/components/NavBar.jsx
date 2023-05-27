@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import {Link} from "react-scroll"
-import logo from '../assets/logo.JPG'
+import { Link } from "react-scroll";
+import logo from "../assets/logo.JPG";
+
 const NavBar = () => {
   const [nav, setNav] = useState(false);
-  
-
 
   const Links = [
     {
@@ -29,12 +28,19 @@ const NavBar = () => {
       link: "contact",
     },
   ];
+
   return (
     <div className="flex justify-between items-center w-full h-20 text-white bg-black fixed px-4">
       <div>
-      <Link smooth duration={500} to="home"> <img  className="rounded-sm cursor-pointer h-16 w-15 pt-2 " src={logo} alt="img description"/>
-</Link>
-      
+        <a href="/">
+        <img
+            className="rounded-sm cursor-pointer h-16 w-15 pt-2 "
+            src={logo}
+            alt="img description"
+          />
+        </a>
+          
+  
       </div>
 
       <ul className="hidden md:flex">
@@ -43,7 +49,9 @@ const NavBar = () => {
             key={id}
             className="px-4 cursor-pointer capitalize font-medium text-gray-300 hover:scale-125 duration-200 hover:text-zinc-50 "
           >
-            <Link to= {link}smooth duration={800} >{link}</Link>
+            <Link to={link} smooth duration={800}>
+              {link}
+            </Link>
           </li>
         ))}
       </ul>
@@ -54,17 +62,25 @@ const NavBar = () => {
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
-      {nav && (<ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 ">
-        {Links.map(({ id, link }) => (
-          <li key={id} className="cursor-pointer capitalize py-6 text-4xl px-4">
-            <Link onClick={() => setNav(!nav)} to= {link}  smooth duration={800} >{link}</Link>
-          </li>
-        ))}
-      </ul>)}
-
-                
-
-      
+      {nav && (
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 ">
+          {Links.map(({ id, link }) => (
+            <li
+              key={id}
+              className="cursor-pointer capitalize py-6 text-4xl px-4"
+            >
+              <Link
+                onClick={() => setNav(!nav)}
+                to={link}
+                smooth
+                duration={800}
+              >
+                {link}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
