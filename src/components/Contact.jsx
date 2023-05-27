@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
@@ -47,25 +47,6 @@ const Contact = () => {
     },
   ];
 
-  const handleOnChange = (event) => {
-    event.preventDefault();
-    setText(event.target.value);
-  };
-
-  const handleUpClick = (event) => {
-    setText({
-      fullname: "",
-      emailAddress: "",
-      message: "",
-    });
-  };
-
-  const [Text, setText] = useState({
-    fullname: "",
-    emailAddress: "",
-    message: "",
-  });
-
   return (
     <div
       name="contact"
@@ -76,13 +57,14 @@ const Contact = () => {
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact
           </p>
-          <div className="py-6">
+          <p className="py-6">
             Submit the form below to get in touch with me
             <p className="text-sm italic text-slate-500">
+
               Disclaimar: You will get redirected to getform.io after submitting
               the form!
             </p>
-          </div>
+          </p>
         </div>
         <div className="flex justify-center items-center px-4 md:px-0">
           <form
@@ -95,30 +77,21 @@ const Contact = () => {
               name="name"
               placeholder="Enter your name"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-              value={Text.fullname}
-              onChange={handleOnChange}
             />
             <input
               type="Email"
               name="name"
               placeholder="Enter your email"
               className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-              value={Text.emailAddress}
-              onChange={handleOnChange}
             />
             <textarea
               name="message"
               rows="10"
               className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
               placeholder="Enter your message"
-              value={Text.message}
-              onChange={handleOnChange}
             ></textarea>
 
-            <button
-              onClick={handleUpClick}
-              className="text-white w-fit px-6 py-3 my-8 flex items-center rounded-md cursor-pointer bg-gradient-to-br from-purple-600 to-blue-500 mx-auto hover:scale-110 duration-300"
-            >
+            <button className="text-white w-fit px-6 py-3 my-8 flex items-center rounded-md cursor-pointer bg-gradient-to-br from-purple-600 to-blue-500 mx-auto hover:scale-110 duration-300">
               Let's talk
             </button>
           </form>
