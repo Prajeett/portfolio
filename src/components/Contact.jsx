@@ -54,17 +54,17 @@ const Contact = () => {
     >
       <div className="pb-8">
         <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+          <div className="text-4xl font-bold inline border-b-4 border-gray-500">
             Contact
-          </p>
-          <p className="py-6">
+          </div>
+          <div className="py-6">
             Submit the form below to get in touch with me
             <p className="text-sm italic text-slate-500">
 
               Disclaimar: You will get redirected to getform.io after submitting
               the form!
             </p>
-          </p>
+          </div>
         </div>
         <div className="flex justify-center items-center px-4 md:px-0">
           <form

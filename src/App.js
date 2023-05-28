@@ -8,7 +8,7 @@ import Portfolio from "./components/Portfolio";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import LoadingScreen from "./components/LoadingScreen";
-// import LoadingScreen from './components/LoadingScreen';
+
 
 function App() {
   const [loading, setLoading] = useState(true);

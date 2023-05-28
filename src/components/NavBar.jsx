@@ -33,14 +33,12 @@ const NavBar = () => {
     <div className="flex justify-between items-center w-full h-20 text-white bg-black fixed px-4">
       <div>
         <a href="/">
-        <img
+          <img
             className="rounded-sm cursor-pointer h-16 w-15 pt-2 "
             src={logo}
             alt="img description"
           />
         </a>
-          
-  
       </div>
 
       <ul className="hidden md:flex">

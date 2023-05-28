@@ -1,4 +1,5 @@
 import React from "react";
+import Typewriter from 'typewriter-effect'
 import heroImage from "../assets/heroImage.JPG";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
@@ -12,7 +13,22 @@ const Home = () => {
       <div className=" max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-2xl sm:text-4xl font-bold text-white min-w-max">
-            Full Stack Developer
+          <Typewriter
+  
+  onInit={(typewriter)=> {
+
+  typewriter
+  
+  .typeString("I am ")
+    
+  .pauseFor(1000)
+  .deleteAll()
+  .typeString("Full-Stack Developer")
+  .start();
+  }}
+  />
+
+     
           </h2>
           <p className="text-gray-500 py-4 max-w-lg">
             Continually learning and staying up-to-date with the latest web
