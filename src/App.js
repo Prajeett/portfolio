@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import SocialLinks from "./components/SocialLinks";
@@ -13,7 +13,7 @@ import LoadingScreen from "./components/LoadingScreen";
 function App() {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setTimeout(() => {
       setLoading(false);
     }, 2000);
