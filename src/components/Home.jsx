@@ -1,8 +1,8 @@
 import React from "react";
-import Typewriter from 'typewriter-effect'
 import heroImage from "../assets/heroImage.JPG";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
+import "./style.css"
 
 const Home = () => {
   return (
@@ -13,29 +13,29 @@ const Home = () => {
       <div className=" max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-2xl sm:text-4xl font-bold text-white min-w-max">
-          <Typewriter
-  
-  onInit={(typewriter)=> {
-
-  typewriter
-  
-  .typeString("I am ")
-    
-  .pauseFor(1000)
-  .deleteAll()
-  .typeString("Full-Stack Developer")
-  .start();
-  }}
-  />
+          <p>Full Stack Developer</p>
 
      
           </h2>
-          <p className="text-gray-500 py-4 max-w-lg">
+          <div className="text-gray-500 py-4 max-w-lg">
+          <p  className="text-gray-300 max-w-lg">
+          I <span className="change-text"></span>{" "}
+          <span className="responsive">r</span>
+          <span className="responsive">e</span>
+          <span className="responsive">s</span>
+          <span className="responsive">p</span>
+          <span className="responsive">o</span>
+          <span className="responsive">n</span>
+          <span className="responsive">s</span>
+          <span className="responsive">i</span>
+          <span className="responsive">v</span>
+          <span className="responsive">e</span> websites.
+        </p>
             Continually learning and staying up-to-date with the latest web
             development trends and technologies to deliver robust and efficient
             solutions. Dedicated to producing high-quality code that solves
             complex problems and drives business growth.
-          </p>
+          </div>
 
           <div>
             <Link
