@@ -4,7 +4,7 @@ import hotel from "../assets/portfolio/hotel.png";
 import incomeTax from "../assets/portfolio/incomeTax.png";
 import movieSearch from "../assets/portfolio/movieSearch.png";
 import todo from "../assets/portfolio/todo.png";
-import netflix from "../assets/portfolio/netflix.png"
+import netflix from "../assets/portfolio/netflix.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -12,7 +12,8 @@ const Portfolio = () => {
       id: 1,
       src: netflix,
       headings: "Netflix Clone",
-      description: "Netflix Clone using React, redux/toolkit, Firebase, Google Auth and Stripe",
+      description:
+        "Netflix Clone using React, redux/toolkit, Firebase, Google Auth and Stripe",
       Demo: "https://prajeet-netflix-clone.netlify.app/",
       Code: "https://github.com/Prajeett/React-Netflix-clone",
     },
@@ -61,7 +62,7 @@ const Portfolio = () => {
   return (
     <div
       name="portfolio"
-      className="bg-gradient-to-b from-black via-black to-gray-800 text-white md:h-screen pt-10 md:pt-0"
+      className="bg-gradient-to-b from-black via-black to-gray-800 text-white md:h-full pt-3 md:pt-0"
     >
       <div className="max-w-screen-lg px-8 py-6 mx-auto flex flex-col justify-centre w-full h-full">
         <div className="pb-8">
@@ -71,7 +72,7 @@ const Portfolio = () => {
           <p className="py-6">Check out my work here</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 sm:px-0 ">
-          {portfolios.map(({ id, src, Demo, Code, headings, description}) => (
+          {portfolios.map(({ id, src, Demo, Code, headings, description }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <h1 className="pb-3 text-center font-bold">{headings}</h1>
               <img
@@ -93,9 +94,10 @@ const Portfolio = () => {
                     Code
                   </button>
                 </a>
-
               </div>
-              <h5 className="text-center text-xs px-3 pb-1 text-gray-400" >{description}</h5>
+              <h5 className="text-center text-xs px-3 pb-1 text-gray-400">
+                {description}
+              </h5>
             </div>
           ))}
         </div>

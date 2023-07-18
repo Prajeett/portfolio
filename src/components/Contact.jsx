@@ -41,7 +41,7 @@ const Contact = () => {
           <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/PrajeetBasnetResume1.pdf",
+      href: "/PrajeetBasnetResume.pdf",
       style: "rounded-br-md",
       download: true,
     },
@@ -60,7 +60,6 @@ const Contact = () => {
           <div className="py-6">
             Submit the form below to get in touch with me
             <p className="text-sm italic text-slate-500">
-
               Disclaimar: You will get redirected to getform.io after submitting
               the form!
             </p>
