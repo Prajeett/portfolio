@@ -1,9 +1,7 @@
 import React from "react";
-import Ecommerce from "../assets/portfolio/Ecommerce.png";
+
 import hotel from "../assets/portfolio/hotel.png";
-import incomeTax from "../assets/portfolio/incomeTax.png";
-import movieSearch from "../assets/portfolio/movieSearch.png";
-import todo from "../assets/portfolio/todo.png";
+import todo from "../assets/portfolio/CRUD.png";
 import netflix from "../assets/portfolio/netflix.png";
 
 const Portfolio = () => {
@@ -13,51 +11,29 @@ const Portfolio = () => {
       src: netflix,
       headings: "Netflix Clone",
       description:
-        "Netflix Clone using React, redux/toolkit, Firebase, Google Auth and Stripe",
+        "Netflix Clone having subscription, login, register and other features using React, Redux/Toolkit, Firebase, Google Auth and Stripe",
       Demo: "https://prajeet-netflix-clone.netlify.app/",
       Code: "https://github.com/Prajeett/React-Netflix-clone",
     },
-
     {
       id: 2,
+      src: todo,
+      headings: "Todo App",
+      description: "CRUD app having drag and drop, create, read, update and delete features using Typescript and React",
+      Demo: "https://prajeet-crudapp.netlify.app/",
+      Code: "https://github.com/Prajeett/typescript-react-CRUD",
+    },
+    {
+      id: 3,
       src: hotel,
       headings: "Hotel Website",
       description: "Hotel Webapp using vanillaJS",
       Demo: "https://tajalehotels.netlify.app/",
       Code: "https://github.com/Prajeett/hotel/",
     },
-    {
-      id: 3,
-      src: todo,
-      headings: "Todo App",
-      description: "Todo app using vanillaJS",
-      Demo: "https://prajeet-todo.netlify.app/",
-      Code: "https://github.com/Prajeett/to-do-list",
-    },
-    {
-      id: 4,
-      src: movieSearch,
-      headings: "Movie Search App",
-      description: "Fetched movies using freely available API",
-      Demo: "https://react-api-movie-search.netlify.app/",
-      Code: "https://github.com/Prajeett/search-movie-react",
-    },
-    {
-      id: 5,
-      src: Ecommerce,
-      headings: "Ecommerce Webapp",
-      description: "Frontend Ecommerce Webapp",
-      Demo: "https://prajeet-ecommerce.netlify.app/",
-      Code: "https://github.com/Prajeett/React-Ecommerce",
-    },
-    {
-      id: 6,
-      src: incomeTax,
-      headings: "Income Tax Calculator",
-      description: "Income Tax Calculator using vanillaJS",
-      Demo: "https://prajeet-ato.netlify.app/",
-      Code: "https://github.com/Prajeett/ato_tax_calculation",
-    },
+
+    
+
   ];
   return (
     <div

@@ -1,6 +1,6 @@
 import React from "react";
-import html from "../assets/html.png";
-import css from "../assets/css.png";
+import TypeScript from "../assets/TypeScript.png";
+import Node from "../assets/Node.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import SASS from "../assets/SASS.png";
@@ -14,33 +14,36 @@ const Experience = () => {
   const techs = [
     {
       id: 1,
-      src: html,
-      title: "HTML5",
-      style: "shadow-orange-500",
-    },
-    {
-      id: 2,
-      src: css,
-      title: "CSS3",
+      src: TypeScript,
+      title: "TypeScript",
       style: "shadow-blue-500",
     },
+
     {
-      id: 3,
+      id: 2,
       src: javascript,
       title: "JavaScript",
       style: "shadow-yellow-500",
     },
+
     {
-      id: 4,
+      id: 3,
       src: reactImage,
       title: "React",
       style: "shadow-blue-600",
     },
     {
-      id: 5,
+      id: 4,
       src: tailwind,
       title: "Tailwind",
       style: "shadow-sky-400",
+    },
+
+    {
+      id: 5,
+      src: Node,
+      title: "NodeJS",
+      style: "shadow-sky-400 pt-8",
     },
     {
       id: 6,
