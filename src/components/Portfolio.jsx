@@ -18,7 +18,7 @@ const Portfolio = () => {
     {
       id: 2,
       src: todo,
-      headings: "Todo App",
+      headings: "CRUD App",
       description: "CRUD app having drag and drop, create, read, update and delete features using Typescript and React",
       Demo: "https://prajeet-crudapp.netlify.app/",
       Code: "https://github.com/Prajeett/typescript-react-CRUD",
