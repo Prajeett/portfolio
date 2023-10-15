@@ -1,6 +1,6 @@
 import React from "react";
 import TypeScript from "../assets/TypeScript.png";
-import Node from "../assets/Node.png"
+import Nodee from "../assets/Nodee.png"
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import SASS from "../assets/SASS.png";
@@ -41,7 +41,7 @@ const Experience = () => {
 
     {
       id: 5,
-      src: Node,
+      src: Nodee,
       title: "NodeJS",
       style: "shadow-sky-400 pt-8",
     },
