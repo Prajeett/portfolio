@@ -1,6 +1,6 @@
 import React from "react";
 import TypeScript from "../assets/TypeScript.png";
-import Node from "../assets/Node.png";
+import Node from "../assets/Node.png"
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import SASS from "../assets/SASS.png";
