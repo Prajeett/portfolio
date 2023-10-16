@@ -29,7 +29,7 @@ const Home = () => {
           <span className="responsive">s</span>
           <span className="responsive">i</span>
           <span className="responsive">v</span>
-          <span className="responsive">e</span> websites.
+          <span className="responsive">e</span> Web Applications.
         </p>
             Continually learning and staying up-to-date with the latest web
             development trends and technologies to deliver robust and efficient
