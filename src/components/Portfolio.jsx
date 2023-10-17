@@ -26,7 +26,7 @@ const Portfolio = () => {
     {
       id: 3,
       src: hotel,
-      headings: "Hotel Website",
+      headings: "Hotel Web Application",
       description: "Hotel Webapp using vanillaJS",
       Demo: "https://tajalehotels.netlify.app/",
       Code: "https://github.com/Prajeett/hotel/",
