@@ -56,7 +56,9 @@ const NavBar = () => {
 
       <div
         className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
-        onClick={() => setNav(!nav)}
+        onClick={() => {
+          window.scrollBy(0, 800);
+          setNav(!nav)}}
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
@@ -68,7 +70,9 @@ const NavBar = () => {
               className="cursor-pointer capitalize py-6 text-4xl px-4"
             >
               <Link
-                onClick={() => setNav(!nav)}
+                onClick={() => {
+              
+                  setNav(!nav)}}
                 to={link}
                 smooth
                 duration={800}
