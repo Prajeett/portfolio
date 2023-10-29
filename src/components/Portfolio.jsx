@@ -71,7 +71,7 @@ const Portfolio = () => {
                   </button>
                 </a>
               </div>
-              <h5 className="text-center text-xs px-3 pb-1 text-slate-600">
+              <h5 className="text-center text-xs px-3 pb-1 text-slate-200 font-semibold">
                 {description}
               </h5>
             </div>
